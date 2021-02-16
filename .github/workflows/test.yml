@@ -19,9 +19,8 @@ jobs:
           path: public/
 
   test:
-
+    needs: build
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         os: [ubuntu-latest, windows-2016]
